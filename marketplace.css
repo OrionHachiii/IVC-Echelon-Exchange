@@ -1,0 +1,186 @@
+/* Hero Banner */
+.hero-banner {
+    width: 100%;
+    height: 300px;
+    background: url("placeholder_banner.jpg") center/cover no-repeat;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .hero-content {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: #002fa7;
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  /* Marketplace Search */
+  .marketplace-search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .marketplace-search input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #002fa7;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  /* Categories Section */
+  .categories-section {
+    margin-bottom: 40px;
+  }
+  
+  .categories-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #002fa7;
+  }
+  
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 20px;
+  }
+  
+  .category-card {
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #002fa7;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .category-card span {
+    display: block;
+    margin-top: 8px;
+    color: #002fa7;
+    font-weight: bold;
+  }
+  
+  /* Trending Items Section */
+  .trending-section {
+    margin-bottom: 40px;
+  }
+  
+  .trending-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #002fa7;
+  }
+  
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Individual Item Card */
+  .item-card {
+    background: #FFFFFF;
+    border: 1px solid #002fa7;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .item-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .item-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .item-card h4 {
+    font-size: 16px;
+    color: #002fa7;
+    margin-bottom: 5px;
+  }
+  
+  .item-card p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+/* Style for product cards (item-card) */
+.item-card {
+    background: #FFFFFF;
+    border: 1px solid #002fa7;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+  }
+  
+  /* Blur effect for loading items */
+  .item-card.loading {
+    filter: blur(5px);
+    transition: filter 0.5s ease-out;
+  }
+  
+  /* Image styling for product cards */
+  .item-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Optional: hover effect */
+  .item-card:hover {
+    transform: scale(1.02);
+  }
+
+/* Hero Banner Animation for Explore Deals */
+.hero-banner.animate-explore {
+    animation: pulse 1s ease-out;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Item card fade-in effect */
+  .item-card.loading {
+    filter: blur(5px);
+    transition: filter 0.5s ease-out;
+  }

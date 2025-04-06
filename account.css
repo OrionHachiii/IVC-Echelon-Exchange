@@ -1,0 +1,27 @@
+/* account.css */
+
+/* Style for the account update form */
+#accountForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #accountForm .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #accountForm label {
+    margin-bottom: 5px;
+    color: #FFFFFF; /* Solid white for clarity */
+    font-weight: bold;
+  }
+  
+  #accountForm input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  

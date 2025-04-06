@@ -1,0 +1,27 @@
+/* profile.css */
+
+/* Style for the profile update form */
+#profileForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #profileForm .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #profileForm label {
+    margin-bottom: 5px;
+    color: #FFFFFF; /* Solid white for clarity */
+    font-weight: bold;
+  }
+  
+  #profileForm input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  

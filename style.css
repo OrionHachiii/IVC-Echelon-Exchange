@@ -1,0 +1,154 @@
+/* Reset common styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Body with high-end gradient background and contrasting text */
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab); /* Luxurious gradient background */
+  color: #F0F0F0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Optional container for overall layout (if needed) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles with a subtle dark overlay and gradient logo text */
+header {
+  background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.logo h1 {
+  font-size: 28px;
+  background: linear-gradient(45deg, #FF416C, #FF4B2B); /* Vibrant gradient for logo */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+
+nav ul li:hover {
+  color: #FF4B2B;
+}
+
+/* Main content area with increased padding and contrast */
+main {
+  padding: 40px 20px;
+}
+
+/* Section styling with a semi-transparent overlay and modern rounded corners */
+.section {
+  margin-bottom: 60px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Headings with gradient text for an advanced look */
+.section h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  background: linear-gradient(45deg, #FF4B2B, #FF416C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 5px;
+}
+
+/* Button styles with bold gradients and a bounce effect */
+.btn {
+  background: linear-gradient(45deg, #FF4B2B, #FF416C);
+  color: #FFF;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #FF416C, #FF4B2B);
+}
+
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Bounce animation for button click effect */
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+.bounce {
+  animation: bounce 0.3s ease;
+}
+
+/* Chat area styles with a modern, semi-transparent look */
+.chat-area {
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 15px;
+  height: 220px;
+  overflow-y: auto;
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+
+.chat-input-container {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input-container input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Cart icon styling with a bit of margin */
+.cart-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Footer with a dark semi-transparent overlay */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.5);
+  margin-top: 40px;
+  font-size: 14px;
+}

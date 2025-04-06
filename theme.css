@@ -1,0 +1,14 @@
+/* theme.css */
+
+/* 
+  We’ll use #F9F9F9 for the page background, 
+  #2c3848 for primary text, 
+  and #89938e for accent elements (e.g., buttons).
+*/
+
+body {
+    background-color: #F9F9F9; /* Light background */
+    color: #2c3848;           /* Dark text */
+    line-height: 1.6;
+    min-height: 100vh;
+  }

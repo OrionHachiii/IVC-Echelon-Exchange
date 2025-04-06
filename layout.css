@@ -1,0 +1,60 @@
+/* layout.css */
+
+/* Header with a subtle background or just white, depending on preference */
+header {
+    background-color: #FFFFFF; /* Simple, bright header for Apple-like minimalism */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Logo container, containing the college logo + site name */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav ul li {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li:hover {
+    color: #89938e; /* Subtle accent on hover */
+  }
+  
+  /* Main content area */
+  main {
+    padding: 40px 20px;
+  }
+  
+  /* Footer with a simple design */
+  footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #E5E5E5;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  
+  /* Section styling (semi-transparent or just white box) */
+  .section {
+    margin-bottom: 60px;
+    padding: 20px;
+    background: #FFFFFF; /* Solid white, no gradient */
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  

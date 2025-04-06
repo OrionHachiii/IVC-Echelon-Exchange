@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Register - IVC Echelon Exchange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Use your custom CSS files instead of Bootstrap -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="components.css">
+    <style>
+      /* Registration page specific styling */
+      .account-container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #FFFFFF;
+        border: 1px solid #002fa7;
+        border-radius: 8px;
+      }
+      .account-container h2 {
+        text-align: center;
+        color: #002fa7;
+      }
+      .account-container p {
+        text-align: center;
+        color: #002fa7;
+      }
+      .account-form-group {
+        margin-bottom: 15px;
+      }
+      .account-form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #002fa7;
+      }
+      .account-form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #002fa7;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      .account-container .btn {
+        width: 100%;
+        margin-top: 10px;
+        background-color: #002fa7;
+        color: #FFFFFF;
+        border: none;
+        padding: 12px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .account-container a {
+        color: #002fa7;
+        text-decoration: none;
+      }
+      .return-home {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .return-home .btn {
+        width: auto;
+        padding: 8px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="account-container">
+      <h2>Register</h2>
+      <p>Please fill this form to create an account.</p>
+      <form action="" method="post" id="registrationForm">
+        <div class="account-form-group">
+          <label>User Name</label>
+          <input type="text" name="name" required>
+        </div>
+        <div class="account-form-group">
+          <label>Email Address</label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="account-form-group">
+          <label>Password</label>
+          <input type="password" name="password" required>
+        </div>
+        <div class="account-form-group">
+          <label>Confirm Password</label>
+          <input type="password" name="confirm_password" required>
+        </div>
+        <div class="account-form-group">
+          <label>College</label>
+          <input type="text" name="College" required>
+        </div>
+        <div class="account-form-group">
+          <input type="submit" name="submit" class="btn" value="Submit">
+        </div>
+        <p>Already have an account? <a href="loggin.html">Login here</a>.</p>
+      </form>
+      <!-- Return to Homepage Button -->
+      <div class="return-home">
+        <button class="btn" onclick="location.href='index.html'">Return to Homepage</button>
+      </div>
+    </div>
+    <script src="accounts.js"></script>
+  </body>
+</html>

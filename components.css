@@ -1,0 +1,273 @@
+/* components.css */
+
+/* Solid logo text for clarity */
+.logo h1 {
+    font-size: 28px;
+    color: #002fa7; /* Klein Blue for logo text */
+  }
+
+.ivc-logo {
+  width: 50px; /* Adjust as needed */
+  height: auto;
+}
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav ul li {
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 16px;
+    color: #002fa7; /* Klein Blue as default text */
+  }
+  
+  nav ul li:hover {
+    color: #555; /* A slightly different shade on hover */
+  }
+  
+  /* Solid section headings for clarity */
+  .section h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #002fa7; /* Klein Blue */
+    border-bottom: 2px solid #002fa7;
+    padding-bottom: 5px;
+  }
+  
+  /* Buttons using white and Klein Blue */
+  .btn {
+    background-color: #FFFFFF; /* White background */
+    color: #002fa7; /* Klein Blue text */
+    border: 2px solid #002fa7;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s, color 0.3s;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #002fa7;
+    color: #FFFFFF;
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+  
+  /* Bounce animation */
+  @keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+  }
+  
+  .bounce {
+    animation: bounce 0.3s ease;
+  }
+  
+  /* Chat area */
+  .chat-area {
+    border: 1px solid #002fa7;
+    padding: 15px;
+    height: 220px;
+    overflow-y: auto;
+    background: #FFFFFF;
+    border-radius: 8px;
+    color: #002fa7;
+  }
+  
+  /* Chat input container */
+  .chat-input-container {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-input-container input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #002fa7;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  /* Cart icon styling */
+  .cart-icon {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #002fa7;
+  }
+  
+  /* Chat message styles */
+  .chat-message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .user-message {
+    background-color: #FFFFFF;
+    text-align: left;
+    border: 1px solid #002fa7;
+    color: #002fa7;
+  }
+  
+  .bot-message {
+    background-color: #F1F1F1;
+    text-align: left;
+    font-style: italic;
+    border: 1px solid #002fa7;
+    color: #002fa7;
+  }
+  
+  .timestamp {
+    font-size: 12px;
+    color: #002fa7;
+    margin-right: 5px;
+  }
+  
+  /* Friend item styles */
+  .friend-item {
+    background: #FFFFFF;
+    border: 1px solid #002fa7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .friend-item h4 {
+    margin-bottom: 5px;
+    color: #002fa7;
+  }
+  
+  .friend-item p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #002fa7;
+  }
+  
+  /* Friends controls styling */
+  .friends-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .friends-controls input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #002fa7;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  /* Cart item styles */
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #002fa7;
+    border-radius: 5px;
+  }
+  
+  /* Remove button styles for cart items */
+  .btn-remove {
+    background: #002fa7;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .btn-remove:hover {
+    background: #FFFFFF;
+    color: #002fa7;
+  }
+
+  /* Slider container for marketplace products */
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  /* Individual slider items */
+  .slider-item {
+    min-width: 200px;
+    background: #FFFFFF;
+    border: 1px solid #002fa7;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+/* Tutorial Custom Numbering */
+.tutorial ol {
+    counter-reset: item;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .tutorial li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .tutorial li::before {
+    counter-increment: item;
+    content: counter(item);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    background-color: #002fa7; /* Klein Blue background */
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Guess What You Need Section Styles */
+  .guess-section {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #002fa7;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #002fa7;
+  }
+  
+  .guess-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .guess-content p {
+    margin: 5px 0;
+  }
+  
+  .not-found {
+    font-size: 20px;
+    color: #002fa7;
+    text-align: center;
+    padding: 20px;
+  }
+  
