@@ -19,8 +19,7 @@ This project showcases our skills in responsive UI design, JavaScript-driven int
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/yourusername/IVC-Echelon-Exchange.git
-   cd IVC-Echelon-Exchange
-   
+   cd IVC-Echelon-Exchange  
 2. **Serve files**  
    Open index.html directly in your browser
    (Ensure you download the entire folder, including css/, js/, and assets/.)
